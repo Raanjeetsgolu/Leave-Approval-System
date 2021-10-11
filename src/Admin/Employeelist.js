@@ -2,10 +2,11 @@ import React, { useState, useEffect } from "react";
 import { collection, query, onSnapshot } from "firebase/firestore";
 import { db } from "../firebase";
 import EmployeeDetailsPopUp from "./EmployeeDetailsPopUp";
+import './Employeelist.css'
 
 const Employeelist = () => {
   const [employee, setemployee] = useState([]);
-  const [trigger, settrigger] = useState(false);
+  const [employeedetails, setemployeedetails] = useState(false);
 
   useEffect(() => {
     const q = query(collection(db, "employee"));
@@ -20,27 +21,28 @@ const Employeelist = () => {
     });
     return () => unsub();
   }, []);
-  const styleval={
-      margin:'auto',
-      color:'black',
 
-
-  }
   return (
-    <div>
-      <table className="table" style={styleval}>
-        <thead style={{color:"black"}} >
+    <div className="employeelist">
+      <table className="table" >
+        <thead  >
           <tr >
             <th >Name</th>
             <th>Phone Number</th>
+            <th></th>
             
           </tr>
         </thead>
+        <tbody>
         {employee.map((d) => (
-          <tr onClick={() => settrigger(!trigger)} >
+          <tr key={d.phoneNumber} >
             <td> {d.name}</td>
             <td> {d.phoneNumber}</td>
-            <EmployeeDetailsPopUp trigger={trigger}>
+            <td><div>
+            <button onClick={() => setemployeedetails(true)}>Employee Details</button>
+            
+            <EmployeeDetailsPopUp trigger={employeedetails} settrigger={setemployeedetails}>
+           
               <div className="Name_popup">
                 <strong> Name :</strong> {d.name}
               </div>
@@ -56,7 +58,7 @@ const Employeelist = () => {
               <div className="Gender_popup">
                 
                 <strong> Gender : </strong>
-                {d.gender}{" "}
+                {d.gender}
               </div>
               <div className="Experience_popup">
                 <strong> Experience :</strong>
@@ -66,10 +68,12 @@ const Employeelist = () => {
                 <strong> Approved Leave :</strong>
                 {d.approvedleave} 
               </div>
-              
+             
             </EmployeeDetailsPopUp>
+           </div> </td>
           </tr>
         ))}
+        </tbody>
       </table>
     </div>
   );

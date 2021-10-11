@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { BrowserRouter as Link } from 'react-router-dom';
-import AddNewEmployee from './AddNewEmployee'
+import AddNewEmployee from '../Admin/AddNewEmployee'
 const Adminpanel = () => {
     return (
         <div className="adminpanel">
@@ -9,7 +9,7 @@ const Adminpanel = () => {
                 <nav>
                     <navmenu>
                         <h1>Login</h1>
-                        <h1>Login</h1>
+                        
                         <Link to='./addnewemployee'>
                        < AddNewEmployee/>
                         </Link>

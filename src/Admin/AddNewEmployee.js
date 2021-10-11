@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import './AddNewEmployee.css'
 import { db } from '../firebase';
 import { collection,addDoc } from '@firebase/firestore';
+import {Link } from 'react-router-dom'
 
 const AddNewEmployee = () => {
    
@@ -28,7 +29,8 @@ const AddNewEmployee = () => {
          
     return (
         <div className="addnewemployee">
-           
+           <Link className="homeback" to='./'>   Back to Home
+               </Link>
             <form onSubmit={submitform}>
                 <label> Name
                 <input type="text" onChange={(e)=>setname(e.target.value)} required value={name} />
@@ -36,7 +38,10 @@ const AddNewEmployee = () => {
                 <label> Phone Number
                 <input type="number" onChange={(e)=>setphoneNumber(e.target.value)} required  value={phoneNumber} />
                 </label>
+
+                
                 <button type="submit" >Add Employee</button>
+                
             </form>
         </div>
 

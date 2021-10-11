@@ -1,0 +1,16 @@
+.table>thead{
+    color :black
+}
+
+  
+table{
+      margin: auto;
+      width: 60%;
+}
+.employeelist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border: 3px solid green;
+  }
