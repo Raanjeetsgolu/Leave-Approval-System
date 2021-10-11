@@ -1,0 +1,37 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 400px;
+
+  align-items: center;
+  border: 2px solid grey;
+  margin: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+form{
+    margin: 30px;
+}
+form > input,label {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  
+}
+form>label{
+    font-size: 20px;
+    color: black;
+    
+}
+button{
+    background-color: red;
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+    margin-left: 25%;
+    
+    
+}
