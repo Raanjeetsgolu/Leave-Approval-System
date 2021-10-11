@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Leave-Approval-System/static/css/main.b1359a56.chunk.css",
-    "main.js": "/Leave-Approval-System/static/js/main.84c6b3b7.chunk.js",
-    "main.js.map": "/Leave-Approval-System/static/js/main.84c6b3b7.chunk.js.map",
+    "main.css": "/Leave-Approval-System/static/css/main.74bf4916.chunk.css",
+    "main.js": "/Leave-Approval-System/static/js/main.ec8ef8ea.chunk.js",
+    "main.js.map": "/Leave-Approval-System/static/js/main.ec8ef8ea.chunk.js.map",
     "runtime-main.js": "/Leave-Approval-System/static/js/runtime-main.484c8bcd.js",
     "runtime-main.js.map": "/Leave-Approval-System/static/js/runtime-main.484c8bcd.js.map",
-    "static/js/2.9c33484b.chunk.js": "/Leave-Approval-System/static/js/2.9c33484b.chunk.js",
-    "static/js/2.9c33484b.chunk.js.map": "/Leave-Approval-System/static/js/2.9c33484b.chunk.js.map",
+    "static/js/2.ff4a0044.chunk.js": "/Leave-Approval-System/static/js/2.ff4a0044.chunk.js",
+    "static/js/2.ff4a0044.chunk.js.map": "/Leave-Approval-System/static/js/2.ff4a0044.chunk.js.map",
     "index.html": "/Leave-Approval-System/index.html",
-    "static/css/main.b1359a56.chunk.css.map": "/Leave-Approval-System/static/css/main.b1359a56.chunk.css.map",
-    "static/js/2.9c33484b.chunk.js.LICENSE.txt": "/Leave-Approval-System/static/js/2.9c33484b.chunk.js.LICENSE.txt"
+    "static/css/main.74bf4916.chunk.css.map": "/Leave-Approval-System/static/css/main.74bf4916.chunk.css.map",
+    "static/js/2.ff4a0044.chunk.js.LICENSE.txt": "/Leave-Approval-System/static/js/2.ff4a0044.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.484c8bcd.js",
-    "static/js/2.9c33484b.chunk.js",
-    "static/css/main.b1359a56.chunk.css",
-    "static/js/main.84c6b3b7.chunk.js"
+    "static/js/2.ff4a0044.chunk.js",
+    "static/css/main.74bf4916.chunk.css",
+    "static/js/main.ec8ef8ea.chunk.js"
   ]
 }
