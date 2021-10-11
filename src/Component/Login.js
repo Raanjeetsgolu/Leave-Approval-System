@@ -30,6 +30,7 @@ signInWithPhoneNumber(auth, phoneNumber, appVerifier)
       // SMS sent. Prompt user to type the code from the message, then sign the
       // user in with confirmationResult.confirm(code).
       const code=prompt("put the confimantion code");
+      // eslint-disable-next-line
       confirmationResult.confirm(code).
       window.confirmationResult = confirmationResult;
       // ...

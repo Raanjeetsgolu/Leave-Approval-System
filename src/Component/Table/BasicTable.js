@@ -13,7 +13,7 @@ const BasicTable = () => {
     })
     const{
         getTableProps, getTableBodyProps,headerGroups,rows,prepareRow}=tableInstance
-    }
+    
     return (
         <table {...getTableBodyProps()}>
             <thead  >
